@@ -388,10 +388,11 @@ const events: Event[] = [
                   <div className="bg-white rounded-lg shadow p-6 border border-blue-100">
                     <h4 className="text-2xl font-bold mb-2 text-blue-900">{eventToDisplay.title}</h4>
                     <img 
-                      src={eventToDisplay.posterUrl} 
-                      alt={eventToDisplay.title} 
-                      className="w-full h-48 object-cover rounded mb-4 border border-gray-100" 
-                    />
+  src={eventToDisplay.posterUrl} 
+  alt={eventToDisplay.title} 
+  className="w-full h-auto max-h-[80vh] object-contain rounded mb-4 border border-gray-100" 
+/>
+
 
                     <div className="mb-2 text-gray-700"><strong>Date:</strong> {eventToDisplay.date}</div>
                     <div className="mb-2 text-gray-700"><strong>Time:</strong> {eventToDisplay.time}</div>
